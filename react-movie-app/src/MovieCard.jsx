@@ -1,5 +1,5 @@
 import React from 'react'
-import MovieSelect from './MovieSelect'
+
 
 const MovieCard = ({ movie:{ imdbID, Year, Poster, Title,
      Type, } }) => {
@@ -23,9 +23,7 @@ const MovieCard = ({ movie:{ imdbID, Year, Poster, Title,
                     <h3>{Title}</h3>
                     <h3>{imdbID}</h3>
             </div>
-            <div>
-            <MovieSelect imdbID={imdbID}  Year={Year} Poster={Poster} Title={Title} Type={"Rating"}/>
-        </div>         
+                  
         </div>
 
        
