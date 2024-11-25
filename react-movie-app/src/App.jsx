@@ -3,6 +3,7 @@ import SearchIcon from "./search.svg"
 import MovieCard from "./MovieCard";
 import './App.css'
 import Navbar from "./components/Navbar"
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 
 const API_URL ='http://www.omdbapi.com/?apikey=495e6615';
 function App() {
@@ -17,11 +18,12 @@ function App() {
   }
   
   useEffect(()=>{
-    searchMovies("Joker");
+    searchMovies("Avengers");
   },[]);
   return (
+   <Router>
     <div className="app">
-    <h1>PrimeFlix Movies</h1> <i class="fa-brands fa-suse" ></i>
+    <h1>PrimeFlix Movies</h1> <i className="fa-brands fa-suse text-8xl text-blue-500"  ></i>
     <h3 className='  text-xl font-bold p-4 text-black-600 '>Home</h3>
     <h3 className='  text-xl font-bold p-4 text-black-600'>Movies</h3>
     <h3 className='  text-xl font-bold p-4 text-black-600'>Tv Shows</h3>
@@ -49,7 +51,7 @@ function App() {
         <Navbar />
 
   </div>
-
+  </Router>
   )
 }
 
