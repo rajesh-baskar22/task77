@@ -15,5 +15,5 @@ TECHSTACKS NEEDS TO BE USED
       .HTML/CSS AND TAILWINDCSS FOR STYLING
       .JAVASCRIPT
 CLICK LINK : http://localhost:5173/
-netlify: https://marvelous-pony-05caba.netlify.app
+netlify: https://sunny-valkyrie-f4364e.netlify.app/
 
