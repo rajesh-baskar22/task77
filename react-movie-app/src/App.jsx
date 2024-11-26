@@ -5,7 +5,7 @@ import './App.css'
 import Navbar from "./components/Navbar"
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 
-const API_URL ='http://www.omdbapi.com/?apikey=495e6615';
+const API_URL ='https://www.omdbapi.com/?apikey=495e6615';
 function App() {
   const [movies, setMovies] = useState([])
   const [searchTerm, setSearchTerm] = useState("");
